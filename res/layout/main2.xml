@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>	
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/root"
+android:orientation="vertical"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:background="@drawable/mainbackground"
+android:paddingTop="5dp"
+android:gravity="center"
+
+>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/sd_card" />
+
+    <TextView
+        android:id="@+id/sdcardmem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="25dp"
+        android:text="sdcard memory" />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="25dp"
+        android:src="@drawable/internal_mem" />
+
+    <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:paddingTop="25dp"
+        android:paddingLeft="25dp"
+         />
+     <ImageView
+        android:id="@+id/battery_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/battery" />
+     <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/battery_Text"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingTop="25dp"
+        />
+    
+</RelativeLayout>
+
+<GridView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/gridview"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:columnWidth="90dp"
+    android:numColumns="auto_fit"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"    
+    android:clickable="true"
+/>
+
+</LinearLayout>
+
+ 
