@@ -1,1 +1,2 @@
 test
+This is inital commit for smart setting app
